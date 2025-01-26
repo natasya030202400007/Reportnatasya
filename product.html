@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="head-title">Jewelry Price Table</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jewelry Price Table</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Type Of Jewelry</th>
+          <th>Price</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gold Ring</td>
+          <td>Rp 2.000.000</td>
+          <td>
+            <ol>
+              <li>Heavy: 5 grams</li>
+              <li>Design: Plain</li>
+              <li>Gold Content: 75%</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>Diamond Necklace</td>
+          <td>Rp 15.000.000</td>
+          <td>
+            <ol>
+              <li>Heavy: 10 grams</li>
+              <li>Design: Carve</li>
+              <li>White Gold</li>
+              <li>Diamond: 0,5 carat</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>Gold Earrings</td>
+          <td>Rp 1.500.000</td>
+          <td>
+            <ol>
+              <li>Heavy: 3 grams</li>
+              <li>Design: Minimalist</li>
+              <li>Gold Content: 75%</li>
+            </ol>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container">
+    <h1>Order Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="radio-group">Choose Your Type Of Jewelry:</label>
+        <div id="radio-group">
+          <label><input type="radio" name="option" value="gold ring"> Gold Ring </label>
+          <label><input type="radio" name="option" value="diamond necklace"> Diamond Necklace</label>
+          <label><input type="radio" name="option" value="gold earring"> Gold Earrings</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="checkbox-group">Choose Your Design:</label>
+        <div id="checkbox-group">
+          <label><input type="checkbox" name="plain" value="plain"> Plain</label>
+          <label><input type="checkbox" name="minimalist" value="minimalist"> Minimalist</label>
+          <label><input type="checkbox" name="luxurious" value="luxurious"> Luxurious</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="textarea">Description:</label>
+        <textarea id="textarea" name="description" rows="4" placeholder="Write How You like It"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="select">Payment Methods:</label>
+        <select id="select" name="country">
+          <option value="paid of">Paid of</option>
+          <option value="Month">1 Month Installment</option>
+          <option value="Month">3 Month Installment</option>
+          <option value="Month">6 Month Installment</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>
