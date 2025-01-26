@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #FFD700;
+  background-color: #000;
+  overflow: hidden;
+}
+
+/* Animasi Background */
+@keyframes moveGold {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.kiri {
+  display: flex;
+  height: 100vh;
+}
+
+.kiri-body {
+  width: 160px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.85); /* lebih gelap */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kiri-body h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.kiri-body ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.kiri-body li {
+  margin: 8px 2px;
+  font-size: 20px;
+}
+
+.kanan {
+  flex: 1;
+  height: 100vh;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url('gold.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: moveGold 3s linear infinite;
+  position: relative;
+}
+
+.kanan-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.kanan-body h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.See-details {
+  background-color: transparent;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.See-details:hover {
+  background-color: #FFD700;
+  color: #000;
+  box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.7);
+}
